@@ -1,4 +1,4 @@
-# node-query-builder
+# node-pool-query-builder
 MySQL Query Builder for Node.js (tags: nodejs, node, mysql, query builder, query-builder)
 
 MySQL Query Builder Adapter for Node.js
@@ -6,7 +6,7 @@ MySQL Query Builder Adapter for Node.js
 
 Query builder on top of node-mysql2 module (https://github.com/sidorares/node-mysql2).
 <!-- 
-[![npm version](https://badge.fury.io/js/node-query-builder.svg)](https://badge.fury.io/js/node-query-builder) -->
+[![npm version](https://badge.fury.io/js/node-pool-query-builder.svg)](https://badge.fury.io/js/node-pool-query-builder) -->
 
 The main benefit of the query builder is its ability to easily send JavaScript objects directly to MySQL query components, eliminating the need to manually construct the query. This offers more control over database queries compared to traditional ORM, where queries are hidden within the business logic and may not be optimized. Despite being named after CodeIgniter's "Active Record" class, the library does not strictly follow the active record pattern.
 
@@ -22,14 +22,14 @@ This query builder:
 How to install
 ==============
 
-	npm install node-query-builder
+	npm install node-pool-query-builder
 
 
 Get started
 -----------
 
 
-var adapter = require('node-query-builder');
+var adapter = require('node-pool-query-builder');
 
 var db = adapter.connect({
     server: 'localhost',
@@ -176,7 +176,7 @@ Adds a row limit with an offset pointer position to query results.
 
 # Query execution commands
 
-After execution of a query, all query conditions are cleared. Results are passed down to responseCallback function. The parameters handed over to responseCallback match exactly what the underlying node-mysql module produces. See documentation from https://github.com/felixge/node-mysql
+After execution of a query, all query conditions are cleared. Results are passed down to responseCallback function. The parameters handed over to responseCallback match exactly what the underlying node-mysql2 module produces. See documentation from https://github.com/sidorares/node-mysql2
 
 ## .update(tableName, newData, responseCallback)
 Produces and executes UPDATE query. 
@@ -242,7 +242,7 @@ Some more usage examples
 Establishing a connection
 -------------------------
 
-	var adapter = require('node-query-builder');
+	var adapter = require('node-pool-query-builder');
 	var db = adapter.connect({
 		server: 'localhost',
 		username: 'root',

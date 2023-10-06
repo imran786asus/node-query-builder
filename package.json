@@ -1,7 +1,7 @@
 {
   "name": "node-pool-query-builder",
-  "version": "0.0.0-development",
-  "author": "Martin Tajur <martin@tajur.ee>",
+  "version": "1.0.0",
+  "author": "Imran Hussain <imran786wb@gmail.com>",
   "description": "A lightweight MySQL query builder on top of the node-mysql module.",
   "licence": [
     "MIT"
