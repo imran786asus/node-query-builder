@@ -1,22 +1,33 @@
 {
-	"name" : "node-pool-query-builder",
-	"version": "1.0.0",
-	"author": "Martin Tajur <martin@tajur.ee>",
-	"description": "A lightweight MySQL query builder on top of the node-mysql module.",
-	"licence": [
-		"MIT"
-	],
-	"homepage": "https://github.com/imran786asus/node-query-builder",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/imran786asus/node-query-builder.git"
-	},
-	"contributors": [],
-	"dependencies": {
-		"mysql2": "^3.2.0"
-	},
-	"main" : "./",
-	"engines": {
-		"node": "*"
-	}
+  "name": "node-pool-query-builder",
+  "version": "0.0.0-development",
+  "author": "Martin Tajur <martin@tajur.ee>",
+  "description": "A lightweight MySQL query builder on top of the node-mysql module.",
+  "licence": [
+    "MIT"
+  ],
+  "homepage": "https://github.com/imran786asus/node-query-builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imran786asus/node-query-builder.git"
+  },
+  "contributors": [],
+  "dependencies": {
+    "mysql2": "^3.2.0"
+  },
+  "main": "./",
+  "engines": {
+    "node": "*"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  }
 }
